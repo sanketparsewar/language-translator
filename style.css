@@ -1,0 +1,154 @@
+/* importing required fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", system-ui;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(rgb(212, 239, 192), rgb(130, 131, 128));
+  background-color: rgb(144, 144, 236);
+}
+
+.container {
+  width: 690px;
+  background: #fff;
+  border-radius: 7px;
+  padding: 30px;
+}
+
+.wrapper {
+  border-radius: 5px;
+  border: 1px solid #bbb;
+}
+.wrapper .text-input {
+  display: flex;
+  border-bottom: 1px solid #bbb;
+}
+.text-input .to-text {
+  border-radius: 0px;
+  border-left: 1px solid #bbb;
+}
+
+.text-input textarea {
+  height: 250px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  resize: none;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.controls,
+li,
+.icons,
+.icons i {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls {
+  list-style: none;
+  padding: 12px 15px;
+}
+
+.controls .row.from .icons {
+  padding-right: 15px;
+  border-right: 1px solid #bbb;
+}
+.controls .row.to .icons {
+  padding-left: 15px;
+  border-left: 1px solid #bbb;
+}
+
+.controls .icons {
+  width: 38%;
+}
+
+.controls .icons i {
+  width: 50px;
+  color: grey;
+  font-size: 14px;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.controls .row select {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+}
+
+.controls .exchange {
+  color: grey;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.container button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  background-color: rgb(14, 155, 243);
+  font-size: 20px;
+  border-radius: 5px;
+  color: whitesmoke;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+@media (max-width: 560px) {
+  .container {
+    font-size: 1rem;
+    height: fit-content;
+    align-items: center;
+    width: fit-content;
+    display: block;
+    flex-direction: column;
+  }
+  .container .wrapper .text-input {
+    display: block;
+    flex-direction: column;
+  }
+  .text-input textarea {
+    height: 150px;
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid #ddd;
+  }
+
+  .wrapper {
+    border: none;
+  }
+  .controls {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: block;
+    border: 1px solid #bbb;
+  }
+  .from {
+    margin-bottom: 20px;
+  }
+  .to {
+    margin-top: 20px;
+  }
+  .exchange {
+    align-items: center;
+    justify-content: center;
+  }
+}

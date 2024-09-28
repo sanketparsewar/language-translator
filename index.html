@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Language Translator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="wrapper">
+        <div class="text-input">
+            <textarea class="from-text" placeholder="Enter text" id=""></textarea>
+            <textarea class="to-text"  placeholder="Translation" readonly disabled id=""></textarea>
+        </div>
+        <ul class="controls">
+            <li class="row from">
+                <div class="icons">
+                    <i id="from" class="fas fa-volume-up"></i>
+                    <i id="from" class="fas fa-copy"></i>
+                </div>
+                <select >
+                    <!-- <option value="en-us">English</option>
+                    <option value="en-NP">Nepali</option>
+                    <option value="en-IN">hindi</option> -->
+                </select>
+            </li>
+            <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+            <li class="row to">
+                <select >
+                    <!-- <option value="en-IN">Hindi</option>
+                    <option value="en-us">English</option>
+                    <option value="en-NP">Nepali</option> -->
+                </select>
+                <div class="icons">
+                    <i id="to" class="fas fa-volume-up"></i>
+                    <i id="to" class="fas fa-copy"></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <button class="btn">Translate Text</button>
+</div>
+
+
+
+
+
+
+
+<script src="countries.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
